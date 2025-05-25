@@ -16,7 +16,7 @@ Check out live website at: [Healthcare Dashboard](care-health-dashboard.netlify.
 Clone the project
 
 ```bash
-git clone https://link-to-project
+git clone https://github.com/iamvkr/health-care-dashboard.git
 ```
 
 ### Install dependencies
