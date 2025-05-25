@@ -1,0 +1,42 @@
+Based on the provided image, Implement a single-page "Healthcare Dashboard" using React. Note: No interactive functionality (clicks, forms, filtering, adding, editing, deleting) is required.
+ Section Breakdown (To be implemented as React Components):
+
+1. App Component (Root Component):
+- Will orchestrate the main layout (e.g., using Flexbox or Grid for Header, Sidebar, and DashboardMainContent).
+
+2. Header Component (Top Bar):
+- Content:
++ App Logo/Title (Healthcare.).
++ Search Bar (display only, no functionality).
++ Notification Icon.
++ User Profile (static avatar and name).
++ "Add" Button (e.g., + icon, display only).
+
+3. Sidebar Component (Left Navigation):
+- Content:
++ "General" heading.
++ Navigation Links (Dashboard, History, Calendar, Appointments, Statistics, Tests, Chat, Support, Setting – all as static links, no active highlighting needed beyond initial render).
+
+4. DashboardMainContent Component (Main Area Container):
+- This component will contain and render the various sub-sections of the dashboard, as shown in the image.
+- Sub-components within DashboardMainContent:
++ DashboardOverview Component:
+> AnatomySection Component:
+>> Displays the anatomical illustration (human body) with static indicators and text (e.g., "Healthy Heart", "Lungs", "Teeth", "Bone") positioned as in the image.
+>> Each indicator should have its associated health status (e.g., green for healthy, red for an issue).
+> HealthStatusCards Component:
+>>Displays static cards for "Lungs", "Teeth", "Bone" with mock dates and status indicators, as positioned next to the anatomical figure.
++ CalendarView Component:
+> Displays a static monthly calendar grid (e.g., "October 2021").
+> Statically render specific appointment times on relevant days (e.g., "09:00", "11:00", "13:00", "15:00") as shown.
+> Below the main calendar, display static appointment details for "Dentist" and "Physiotherapy Appointment" cards, including names and times.
++ UpcomingSchedule Component:
+> Displays the static "The Upcoming Schedule" section.
+> Organized by day (e.g., "On Thursday", "On Saturday").
+> Contains multiple instances of the SimpleAppointmentCard component.
++ ActivityFeed Component:
+> Displays the static "Activity" section, including the "3 appointments on this week" text and the bar chart visually. This chart can be a static CSS representation of bars, no actual data plotting is needed.
+
+5. SimpleAppointmentCard Component:
+> A reusable component for the appointment cards in the "Upcoming Schedule" section.
+> Content (static): Title (e.g., "Health checkup complete", "Ophthalmologist", "Cardiologist", "Neurologist"), Time, and a small icon/indicator.
